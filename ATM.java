@@ -56,5 +56,36 @@ public class ATM {
 
     System.out.println("inService is now  " + this.inService);
   }
+  
+  //CashDispenser
+  public class CashDispenser {
+    public void dispenseCash(int x) {
+      reduceCash(x);
+      System.out.println(x + " dollars has been dispensed");
+    }
+  }
+
+  //ReceiptPrinter
+  public class ReceiptPrinter {
+    public void printReceipt() {
+      System.out.println("Receipt has been printed");
+    }
+  }
+
+  //CardReader
+  public class CardReader {
+    public void readCard() {
+      System.out.println("Card has been read");
+    }
+  }
+
+  //KeypadDisplay
+  public class KeypadDisplay {
+    public void displayPINverification() {
+      System.out.println("PIN has been verified");
+    }
+  }
+}
+
 
   
