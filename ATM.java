@@ -23,3 +23,14 @@ public class ATM {
     this.cash = cash;
     this.inService = inService;
   }
+  
+//Returns the amount of cash inside the ATM
+  public int queryCash() {
+    return this.cash;
+  }
+
+  //Increase the amount of current cash by x
+  public void increaseCash(int x) {
+    this.cash = this.cash + x;
+  }
+
