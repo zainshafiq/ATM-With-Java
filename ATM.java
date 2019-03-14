@@ -34,3 +34,27 @@ public class ATM {
     this.cash = this.cash + x;
   }
 
+  //Reduce the amount of current cash by x
+  public void reduceCash(int x) {
+    this.cash = this.cash - x;
+  }
+
+  //Returns the value of the inService variable
+  public boolean getServiceStatus() {
+    return this.inService;
+  }
+
+  //Toggles the inService variable from true to false and vice versa
+  public void changeServiceStatus() {
+    if (this.inService == true) {
+      this.inService = false;
+    }
+
+    else {
+      this.inService = true;
+    }
+
+    System.out.println("inService is now  " + this.inService);
+  }
+
+  
