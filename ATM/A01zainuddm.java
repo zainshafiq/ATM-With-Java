@@ -45,6 +45,20 @@ public class A01zainuddm {
     operator.topUpATM(atm1);
     System.out.println("Processing ATM 2");
     operator.topUpATM(atm2);
-
+    
+     //Create instance of a Customer
+    Customer customer = new Customer();
+    //User input (Customer's name)
+    System.out.println("Enter a name for the customer");
+    inputName = in.nextLine();
+    customer.setName(inputName); //Setters
+    int withdrawAmount;
+    //User input (Withdrawal amount)
+    System.out.println("Enter an amount to withdraw");
+    withdrawAmount = Integer.parseInt(in.nextLine());
+    //Call withdrawCash()
+    customer.withdrawCash(atm2, withdrawAmount);
   }
 }
+
+  
