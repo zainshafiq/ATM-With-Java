@@ -25,5 +25,26 @@ public class A01zainuddm {
       }
 
     } while (!isValid);
+    
+     //Create instance of an ATM with zero cash and not in service
+    ATM atm1 = new ATM(0, false);
+
+    //Create instance of an ATM with the amount that the user entered
+    //and in service
+    ATM atm2 = new ATM(inputNumber, true);
+
+    //Create instance of an Operator
+    Operator operator = new Operator();
+    //User input (Operator's name)
+    System.out.println("Enter a name for the operator");
+    inputName = in.nextLine();
+    operator.setName(inputName); //Setters
+
+    //Call topUpATM() on the instances of the ATM
+    System.out.println("Processing ATM 1");
+    operator.topUpATM(atm1);
+    System.out.println("Processing ATM 2");
+    operator.topUpATM(atm2);
+
   }
 }
