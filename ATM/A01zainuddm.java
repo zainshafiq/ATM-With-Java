@@ -1,6 +1,6 @@
 package simpleBank;
 
-//----- A01zainuddm.java (Main) -----------
+//----- A01zainuddm.java -----------
 
 import java.util.Scanner;
 
