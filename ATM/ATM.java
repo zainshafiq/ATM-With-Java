@@ -1,6 +1,6 @@
 package simpleBank;
 
-//------- ATM.java -----------------
+//------- ATM.java ------------------
 
 public class ATM {
 
